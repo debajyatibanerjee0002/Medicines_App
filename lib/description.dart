@@ -1,3 +1,4 @@
+//7
 import 'package:flutter/material.dart';
 import 'package:medical_app/medicines_list.dart';
 
@@ -18,6 +19,7 @@ class Description extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
+                  // create Hero animation
                   Hero(
                     tag: objectOne.pic,
                     child: CircleAvatar(
@@ -56,12 +58,18 @@ class Description extends StatelessWidget {
             ],
           ),
         ),
+
+        // 1st create a floationgActionButton
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.red,
           onPressed: () => Navigator.pop(context),
           child: Icon(Icons.arrow_back),
         ),
+
+        // 2nd set the location of that button
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+
+        // 3rd create a bottomNavigationBar
         bottomNavigationBar: BottomAppBar(
           shape: CircularNotchedRectangle(),
           color: Colors.yellow,

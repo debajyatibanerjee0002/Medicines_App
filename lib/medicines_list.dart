@@ -1,3 +1,5 @@
+//5
+
 class MedicineList {
   String pic;
   String name;
@@ -5,5 +7,3 @@ class MedicineList {
 
   MedicineList({this.about, this.name, this.pic});
 }
-
-
